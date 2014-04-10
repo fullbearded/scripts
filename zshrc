@@ -57,12 +57,6 @@ alias ssh_vps='ssh root@198.52.100.39'
 
 alias ssh_kehu_hujianwen='ssh -p 2222 root@118.244.201.175'
 
-# tuan800 ssh
-alias ssh_47='ssh root@192.168.100.47'
-alias ssh_tao800_tester='ssh webuser@192.168.100.45'
-alias ssh_sulin='ssh sulin@192.168.100.116'
-alias ssh_company_crawler='ssh huhongda@192.168.100.172'
-
 # scp 工具
 alias scp_58share_server="scp -P 58100 root@118.123.20.183:/tmp/deals.tar.gz /tmp/; cd /tmp/;tar -zxf deals.tar.gz; mysql -u root -p123456 w58share < deals.sql"
 
@@ -70,9 +64,6 @@ alias scp_58share_server="scp -P 58100 root@118.123.20.183:/tmp/deals.tar.gz /tm
 alias c1='cd /Users/huhongda/code/private/w58share'
 alias c2='rvm use ruby-2.0.0-p247 --default; cd /Users/huhongda/code/private/w58share'
 alias ca='cd /Users/huhongda/code/private/w519y9'
-alias ctao800='rvm use ruby-1.9.3-p194 --default; cd /Users/huhongda/code/tuan800/tao800_fire'
-alias cpassport='cd /Users/huhongda/code/private/passport'
-alias cgems='cd ~/.rvm/gems/ruby-1.9.3-p194/gems'
 
 alias cuzhan='cd /Users/huhongda/code/u_zhan_develop/trunk/TAE_SDK/apps'
 
@@ -96,7 +87,6 @@ alias e='exit'
 
 # mysql end
 alias m='mysql -u root -p123456'
-alias m8='mysql -h 192.168.100.15 -P 3306 -u tuan_sql -pbabaisql9F13 --default-character-set=utf8 tuan800'
 alias k9='kill -9 '
 
 export LC_ALL=zh_CN.utf-8
