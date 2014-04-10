@@ -61,6 +61,7 @@ Bundle 'git://github.com/vim-scripts/Align.git'
 " Bundle 'git://github.com/vim-scripts/txt.vim.git'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'plasticboy/vim-markdown'
 "Bundle 'shawncplus/php.vim'
 filetype plugin indent on     " required!  加载插件支持缩进
 "
@@ -104,6 +105,13 @@ let g:mapleader = ","  " 修改<leader> 为逗号<,> 默认为<\>号
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 au BufRead,BufNewFile *  setfiletype txt  " 高亮显示普通txt文件（需要txt.vim脚本
 
+
+"'''''''''''''''''''''
+" markdown
+"''''''''''''''''''''
+let g:vim_markdown_folding_disabled=1
+
+
 """"""""""""""""""""""""""""""
 " Tag list (ctags)
 """"""""""""""""""""""""""""""
@@ -133,6 +141,7 @@ let g:SuperTabRetainCompletionType=2
 " 0 - 不记录上次的补全方式
 " 1 - 记住上次的补全方式,直到用其他的补全命令改变它
 " 2 - 记住上次的补全方式,直到按ESC退出插入模式为止
+let g:acp_behaviorRubyOmniMethodLength = -1
 
 " +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 " set mouse=a
